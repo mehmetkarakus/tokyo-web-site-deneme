@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/ad5b8232d1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__menu">
+                <div class="header__menu header__menu--logo mb-30">
+                    <h1 class="header__menu--baslik">TOKYO</h1>
+                </div>
+
+                <navbar class="header__menu header__menu--navbar mb-30">
+                    <ul class="header__menu header__menu--list">
+                        <li><a href="index.html" class="link">Home</a></li>
+                        <li><a href="#" class="link">About</a></li>
+                        <li><a href="#" class="link">Service</a></li>
+                        <li><a href="#" class="link">Portfolio</a></li>
+                        <li><a href="#" class="link">News</a></li>
+                        <li><a href="#" class="link">Contact</a></li>
+                    </ul>
+
+                </navbar>
+
+                <section class="header__menu header__menu--search mb-30">
+                    <form class="header__menu header__menu--search">
+                        <input type="text" class="search" placeholder="Search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                    </form>
+                </section>
+
+                <section class="header__menu header__menu--privacy">
+                    <div>© 2022 Tokyo</div>
+                    <div>Created by <a href="#" class="link">Marketify</a></div>
+                </section>
+            </div>
+
+            <section class="header__mobil">
+                <div class="container">
+                    <nav class="nav-bar">
+                        <div class="header__mobil header__mobil--top-nav nav-branding">
+                            <div>
+                                <h1>TOKYO</h1>
+                            </div>
+
+                            <ul class="nav-menu">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Service</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">News</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="hamburger">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+
+                        </div>
+                    </nav>
+                </div>
+            </section>
+        </header>
+
+        <main class="main">
+
+            <section class="main-about">
+
+                <section class="main-about main-about__img">
+                    <img class="main-about main-about__img-animation" src="images/1.jpg" alt="" width="300"
+                        height="300">
+                </section>
+
+                <section class="main-about main-about__explanation">
+                    <div class="main-about main-about__about-me">
+                        <div class="name">
+                            <h2>ADRIANO SMİTH</h2>
+                        </div>
+                        <div class="about_me">
+                            <div>I am a WordPress Developer at heart and create features</div>
+                            <div>that are best suited for the job at hand.</div>
+                        </div>
+                        <div class="media">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-solid fa-basketball"></i>
+                            <i class="fa-brands fa-tiktok"></i>
+                        </div>
+                    </div>
+
+                </section>
+
+        </main>
+
+    </div>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        })
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }))
+    </script>
+
+</body>
+
+</html>
