@@ -213,6 +213,10 @@ a {
         flex-direction: column;
     }
 
+    .header{
+        flex-grow: 0;
+    }
+
     .header__menu {
         display: none;
         flex-direction: row;
@@ -244,8 +248,8 @@ a {
 
     .nav-menu {
         position: fixed;
-        left: -100%;
-        top: 70px;
+        top: -100%;
+        left: 0;
         gap: 0;
         flex-direction: column;
         background-color: #222;
@@ -261,7 +265,7 @@ a {
     }
 
     .nav-menu.active {
-        left: 0;
+        top: 70px;
     }
 
 }
